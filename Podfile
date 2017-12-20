@@ -6,6 +6,7 @@ target 'Polly' do
   use_frameworks!
 
   # Pods for Polly
+  pod "Apollo"
 
   target 'PollyTests' do
     inherit! :search_paths

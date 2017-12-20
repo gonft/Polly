@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0411D80D1FEA76E1000C8495 /* Test.graphql in Resources */ = {isa = PBXBuildFile; fileRef = 0411D80C1FEA76E1000C8495 /* Test.graphql */; };
 		04A9C9491FEA6F8000083E6F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04A9C9481FEA6F8000083E6F /* AppDelegate.swift */; };
 		04A9C94B1FEA6F8000083E6F /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04A9C94A1FEA6F8000083E6F /* ViewController.swift */; };
 		04A9C94E1FEA6F8000083E6F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 04A9C94C1FEA6F8000083E6F /* Main.storyboard */; };
@@ -14,6 +15,8 @@
 		04A9C9531FEA6F8000083E6F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 04A9C9511FEA6F8000083E6F /* LaunchScreen.storyboard */; };
 		04A9C95E1FEA6F8000083E6F /* PollyTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04A9C95D1FEA6F8000083E6F /* PollyTests.swift */; };
 		04A9C9691FEA6F8000083E6F /* PollyUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04A9C9681FEA6F8000083E6F /* PollyUITests.swift */; };
+		04A9C9791FEA759400083E6F /* schema.json in Resources */ = {isa = PBXBuildFile; fileRef = 04A9C9781FEA759400083E6F /* schema.json */; };
+		04A9C97B1FEA75D600083E6F /* API.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04A9C97A1FEA75D600083E6F /* API.swift */; };
 		28FAE0648E9E0C11820B8E23 /* Pods_Polly.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5A26B841241A685BAF153609 /* Pods_Polly.framework */; };
 		522EC4FC52DB63B63A570136 /* Pods_PollyUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 98A1EEE8482070604EB05D4A /* Pods_PollyUITests.framework */; };
 		8E4FA24BCFB59A53398378BF /* Pods_PollyTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 67941138B8B33A3C702C2BC4 /* Pods_PollyTests.framework */; };
@@ -37,6 +40,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		0411D80C1FEA76E1000C8495 /* Test.graphql */ = {isa = PBXFileReference; lastKnownFileType = text; path = Test.graphql; sourceTree = "<group>"; };
 		04A9C9451FEA6F8000083E6F /* Polly.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Polly.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		04A9C9481FEA6F8000083E6F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		04A9C94A1FEA6F8000083E6F /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -50,6 +54,8 @@
 		04A9C9641FEA6F8000083E6F /* PollyUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PollyUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		04A9C9681FEA6F8000083E6F /* PollyUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PollyUITests.swift; sourceTree = "<group>"; };
 		04A9C96A1FEA6F8000083E6F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		04A9C9781FEA759400083E6F /* schema.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = schema.json; sourceTree = "<group>"; };
+		04A9C97A1FEA75D600083E6F /* API.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = API.swift; sourceTree = "<group>"; };
 		16A900F23E59E32D2D21FCBD /* Pods-Polly.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Polly.release.xcconfig"; path = "Pods/Target Support Files/Pods-Polly/Pods-Polly.release.xcconfig"; sourceTree = "<group>"; };
 		2C0E7706E3AE9F4979200172 /* Pods-Polly.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Polly.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Polly/Pods-Polly.debug.xcconfig"; sourceTree = "<group>"; };
 		2CB06BC69DE512FBC175BFE7 /* Pods-PollyUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PollyUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-PollyUITests/Pods-PollyUITests.debug.xcconfig"; sourceTree = "<group>"; };
@@ -114,12 +120,15 @@
 		04A9C9471FEA6F8000083E6F /* Polly */ = {
 			isa = PBXGroup;
 			children = (
+				04A9C9781FEA759400083E6F /* schema.json */,
+				04A9C97A1FEA75D600083E6F /* API.swift */,
 				04A9C9481FEA6F8000083E6F /* AppDelegate.swift */,
 				04A9C94A1FEA6F8000083E6F /* ViewController.swift */,
 				04A9C94C1FEA6F8000083E6F /* Main.storyboard */,
 				04A9C94F1FEA6F8000083E6F /* Assets.xcassets */,
 				04A9C9511FEA6F8000083E6F /* LaunchScreen.storyboard */,
 				04A9C9541FEA6F8000083E6F /* Info.plist */,
+				0411D80C1FEA76E1000C8495 /* Test.graphql */,
 			);
 			path = Polly;
 			sourceTree = "<group>";
@@ -178,6 +187,7 @@
 				04A9C9431FEA6F8000083E6F /* Resources */,
 				AD34AF4E7C00F04960E0BA60 /* [CP] Embed Pods Frameworks */,
 				6532A9AACADDD89126C85EEA /* [CP] Copy Pods Resources */,
+				04A9C9771FEA727700083E6F /* Generate Apollo GraphQL API */,
 			);
 			buildRules = (
 			);
@@ -281,8 +291,10 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				04A9C9791FEA759400083E6F /* schema.json in Resources */,
 				04A9C9531FEA6F8000083E6F /* LaunchScreen.storyboard in Resources */,
 				04A9C9501FEA6F8000083E6F /* Assets.xcassets in Resources */,
+				0411D80D1FEA76E1000C8495 /* Test.graphql in Resources */,
 				04A9C94E1FEA6F8000083E6F /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -304,6 +316,20 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
+		04A9C9771FEA727700083E6F /* Generate Apollo GraphQL API */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Generate Apollo GraphQL API";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "APOLLO_FRAMEWORK_PATH=\"$(eval find $FRAMEWORK_SEARCH_PATHS -name \"Apollo.framework\" -maxdepth 1)\"\n\nif [ -z \"$APOLLO_FRAMEWORK_PATH\" ]; then\necho \"error: Couldn't find Apollo.framework in FRAMEWORK_SEARCH_PATHS; make sure to add the framework to your project.\"\nexit 1\nfi\n\ncd \"${SRCROOT}/${TARGET_NAME}\"\n$APOLLO_FRAMEWORK_PATH/check-and-run-apollo-codegen.sh generate $(find . -name '*.graphql') --schema schema.json --output API.swift";
+		};
 		16D9690DBF24B996F9CD3766 /* [CP] Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -373,9 +399,12 @@
 			files = (
 			);
 			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-Polly/Pods-Polly-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Apollo/Apollo.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Apollo.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -456,6 +485,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				04A9C94B1FEA6F8000083E6F /* ViewController.swift in Sources */,
+				04A9C97B1FEA75D600083E6F /* API.swift in Sources */,
 				04A9C9491FEA6F8000083E6F /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
